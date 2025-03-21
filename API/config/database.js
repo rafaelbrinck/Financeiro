@@ -2,11 +2,11 @@ const { Client } = require("pg");
 require("dotenv").config();
 
 const conexao = {
-  host: process.env.HOST,
-  port: process.env.PORT,
-  user: process.env.USER,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE,
+  host: "localhost",
+  port: 5433,
+  user: "postgres",
+  password: "banco",
+  database: "AppProjeto",
 };
 
 function getConexao() {
